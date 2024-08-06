@@ -1,11 +1,16 @@
 ---
+import { Juego } from "@/components/preguntas/Juego";
+import Layout from "@/layouts/Layout.astro";
+
+export const prerender = true;
+
 export function getStaticPaths() {
-  return [
-    {params: {jugador: 'amigos'}},
-    {params: {jugador: 'pareja'}},
-  ];
+  return [{ params: { jugador: "amigos" } }, { params: { jugador: "pareja" } }];
 }
 
 const { jugador } = Astro.params;
 ---
-<div>Hola, tu elegiste jugar en modo {jugador}!</div>
+
+<Layout title="Preguntas | Tirale a tu ex">
+  <Juego modo={jugador} client:load/>
+</Layout>

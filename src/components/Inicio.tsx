@@ -1,5 +1,5 @@
 import { useState, useEffect } from "preact/hooks";
-import { GameButton } from "./Extras";
+import { GameButton } from "@/components/Extras";
 
 export function Inicio() {
   const [showMenu, setShowMenu] = useState(false);

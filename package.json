@@ -1,0 +1,22 @@
+{
+  "name": "tirandole-a-mi-ex",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.1",
+    "@astrojs/preact": "^3.5.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@midudev/tailwind-animations": "^0.0.7",
+    "astro": "^4.13.1",
+    "preact": "^10.23.1",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4"
+  }
+}

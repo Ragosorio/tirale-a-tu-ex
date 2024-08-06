@@ -1,0 +1,11 @@
+---
+export function getStaticPaths() {
+  return [
+    {params: {jugador: 'amigos'}},
+    {params: {jugador: 'pareja'}},
+  ];
+}
+
+const { jugador } = Astro.params;
+---
+<div>Hola, tu elegiste jugar en modo {jugador}!</div>

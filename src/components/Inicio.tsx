@@ -29,9 +29,9 @@ export function Inicio() {
       <h2 class="text-[#ededed] font-bold text-3xl text-center mb-16 animate-zoom-in">
         Elige un juego
       </h2>
-      <GameButton src="./que-siente.webp" nombre="Preguntas" link="/preguntas" withFriends={withFriends}/>
-      <GameButton src="./retos.webp" nombre="Ruleta de retos" link="/retos" withFriends={withFriends}/>
-      <GameButton src="./ahorcado.webp" nombre="Ahorcado" link="/ahorcado" withFriends={withFriends}/>
+      <GameButton src="/que-siente.webp" nombre="Preguntas" link="/preguntas" withFriends={withFriends}/>
+      <GameButton src="/retos.webp" nombre="Ruleta de retos" link="/retos" withFriends={withFriends}/>
+      <GameButton src="/ahorcado.webp" nombre="Ahorcado" link="/ahorcado" withFriends={withFriends}/>
       <label class="inline-flex items-center mb-5 cursor-pointer animate-zoom-in">
         <input
           type="checkbox"

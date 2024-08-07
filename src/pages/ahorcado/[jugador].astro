@@ -1,4 +1,6 @@
 ---
+import ErrorPage from "@/components/ErrorPage.astro"
+
 export const prerender = true;
 export function getStaticPaths() {
   return [
@@ -9,4 +11,4 @@ export function getStaticPaths() {
 
 const { jugador } = Astro.params;
 ---
-<div>Hola, tu elegiste jugar en modo {jugador}!</div>
+<ErrorPage />
